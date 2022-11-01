@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body{
+        margin: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-areas:
+        'blauw blauw'
+        'geel roze'
+        'geel zwart';
+        gap: .5em;
+      }
+      header{
+        grid-area: blauw;
+      }
+      nav{
+        grid-area: roze;
+      }
+      main{
+        grid-area: geel;
+      }
+      footer{
+        grid-area: zwart;
+      }
     </style>
   </head>
   <body id="basic-layout-5">
